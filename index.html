@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The World Today — Wednesday 18 November 2026</title>
+<style>
+  :root {
+    --paper: #f5efe0;
+    --ink: #191b22;
+    --red: #9c2b1b;
+    --muted: #3c3f47;
+    --card: #fffdf4;
+    --line: #d8cfb4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #e9e2cd;
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  .page {
+    max-width: 1060px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 40px 34px 30px;
+    box-shadow: 0 6px 40px rgba(25, 27, 34, 0.25);
+  }
+  .kicker {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    letter-spacing: 5px;
+    color: var(--red);
+    margin: 0 0 6px;
+  }
+  h1 {
+    text-align: center;
+    font-size: clamp(38px, 6.5vw, 64px);
+    margin: 0 0 14px;
+    letter-spacing: 1px;
+  }
+  .dateline {
+    background: var(--red);
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: clamp(16px, 2.6vw, 24px);
+    letter-spacing: 4px;
+    padding: 10px 6px;
+    margin-bottom: 22px;
+  }
+  .lede {
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--muted);
+    max-width: 820px;
+    margin: 0 auto 24px;
+    text-align: center;
+  }
+  figure { margin: 0 0 30px; }
+  figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid var(--ink);
+  }
+  figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13.5px;
+    color: var(--muted);
+    margin-top: 8px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 27px;
+    border-bottom: 3px double var(--ink);
+    padding-bottom: 6px;
+    margin: 34px 0 18px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+  }
+  .story {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--ink);
+    padding: 16px 18px 14px;
+  }
+  .story .region {
+    display: inline-block;
+    background: var(--ink);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 3px 8px;
+    margin-bottom: 9px;
+  }
+  .story h3 { margin: 0 0 7px; font-size: 20.5px; line-height: 1.25; }
+  .story p { margin: 0; font-size: 15.5px; line-height: 1.5; color: var(--muted); }
+</style>
+</head>
+<body>
+<main class="page">
+  <p class="kicker">THE DAY IN ONE PICTURE · WORLD NEWS</p>
+  <h1>THE WORLD TODAY</h1>
+  <div class="dateline">WEDNESDAY · 18 NOVEMBER 2026</div>
+  <p class="lede">
+    One image, one day. A newspaper front page for Wednesday 18 November 2026:
+    six of the day's biggest stories — war in the Gulf and Ukraine, a three-power
+    summit in Shenzhen, Ebola in DR Congo, measles in America and a Category 5
+    cyclone in the Pacific — drawn as a single flat-illustration poster.
+  </p>
+  <figure>
+    <img src="image.png" alt="Front-page poster summing up the world news of Wednesday 18 November 2026 in six illustrated panels">
+    <figcaption>The entry image: 1024 × 1024 PNG, drawn as news.svg and rendered locally. The program in main.py writes it to /output/entry.png.</figcaption>
+  </figure>
+
+  <h2>The six stories in the picture</h2>
+  <section class="grid">
+    <article class="story">
+      <span class="region">MIDDLE EAST</span>
+      <h3>US bombs Iran's Qeshm Island</h3>
+      <p>US fighter jets struck a Revolutionary Guard missile launch site on
+      Qeshm Island. Iran answered with drones against US-linked sites in
+      Bahrain and Kuwait — the third attack on Bahrain in under a week.</p>
+    </article>
+    <article class="story">
+      <span class="region">EUROPE</span>
+      <h3>Crimea Bridge hit again</h3>
+      <p>Ukraine struck the Kerch Bridge between Russia and occupied Crimea
+      for a second day, and part of the bridge's road span fell into the
+      Kerch Strait.</p>
+    </article>
+    <article class="story">
+      <span class="region">ASIA</span>
+      <h3>Xi hosts Putin in Shenzhen</h3>
+      <p>Xi Jinping received Vladimir Putin in Shenzhen for the APEC summit
+      and called for lower trade barriers. Talks with Donald Trump were set
+      for Thursday — a rare three-leader moment.</p>
+    </article>
+    <article class="story">
+      <span class="region">AFRICA</span>
+      <h3>Ebola doubles in DR Congo</h3>
+      <p>The UN said the Ebola outbreak in the Democratic Republic of Congo
+      has more than doubled in three months, passing 11,000 cases and 5,400
+      deaths. Around Bunia and Beni, three of four infected children under
+      five do not survive.</p>
+    </article>
+    <article class="story">
+      <span class="region">AMERICAS</span>
+      <h3>US loses measles-free status</h3>
+      <p>After 26 years, the United States lost its measles elimination
+      status, with more than 5,400 cases and 10 deaths reported — a first
+      since the early 1990s.</p>
+    </article>
+    <article class="story">
+      <span class="region">PACIFIC</span>
+      <h3>Cyclone Xavier hits Cook Islands</h3>
+      <p>Category 5 Cyclone Xavier made landfall in the northern Cook
+      Islands, the strongest storm of the day anywhere on Earth.</p>
+    </article>
+  </section>
+
+  <h2>Also today</h2>
+  <section class="grid">
+    <article class="story">
+      <span class="region">ASIA</span>
+      <h3>North Korea fires a missile</h3>
+      <p>North Korea launched a ballistic missile towards the Sea of Japan,
+      South Korea's Joint Chiefs of Staff reported.</p>
+    </article>
+    <article class="story">
+      <span class="region">EUROPE</span>
+      <h3>Siberia plane crash kills 19</h3>
+      <p>A Russian military plane crashed in the Kemerovo region of Siberia,
+      killing all 19 people on board.</p>
+    </article>
+    <article class="story">
+      <span class="region">WORLD</span>
+      <h3>World Court to rule on Myanmar</h3>
+      <p>The World Court was set to rule in the Myanmar genocide case, while
+      in Washington Democrat Mary Peltola's Alaska win gave her party 56
+      Senate seats.</p>
+    </article>
+  </section>
+
+  <footer style="margin-top:34px;border-top:2px solid var(--ink);padding-top:12px;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--muted);line-height:1.6">
+    Sources, all reporting the news of 18 November 2026: One Turn News
+    (oneturn.news), Horizon (horizonapp.link), Nexus Europa (nexuseuropa.eu),
+    The Brief (thebrief.news) and Daily Baku (dailybaku.az). The picture is an
+    original flat illustration drawn for this entry; no photographs or
+    third-party artwork are used.
+  </footer>
+</main>
+</body>
+</html>
